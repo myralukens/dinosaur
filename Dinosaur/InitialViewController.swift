@@ -13,6 +13,7 @@ import Firebase
 
 class InitialViewController: UIViewController {
     let authService = AuthService()
+    var user : User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,7 +116,15 @@ extension InitialViewController: FirebaseLoginDelegate {
   }
 
   func onLoginSuccess(user: User) {
+    self.user = user
     performSegue(withIdentifier: "toTabBarVC", sender: self)
   }
-  
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "toTabBarVC" {
+      if let tabBarVC = segue.destination as? TabBarViewController {
+        tabBarVC.user = user
+      }
+    }
+  }
 }

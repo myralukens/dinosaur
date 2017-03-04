@@ -3,6 +3,7 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'Dinosaur' do
+   pod 'AFNetworking'
    pod 'FBSDKShareKit'
    pod 'FBSDKCoreKit'
    pod 'FBSDKLoginKit'
