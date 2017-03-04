@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E310A241E6B754F0008FDE9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E310A231E6B754F0008FDE9 /* AuthService.swift */; };
+		3E310A261E6B7B670008FDE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E310A251E6B7B670008FDE9 /* GoogleService-Info.plist */; };
+		3E61F7621E6B6D7100AD6F5E /* ChallengeDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61F7611E6B6D7100AD6F5E /* ChallengeDonationViewController.swift */; };
+		3E61F7641E6B6EDD00AD6F5E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61F7631E6B6EDD00AD6F5E /* TabBarViewController.swift */; };
+		3E61F7661E6B701F00AD6F5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61F7651E6B701F00AD6F5E /* ProfileViewController.swift */; };
+		3E61F7681E6B704E00AD6F5E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61F7671E6B704E00AD6F5E /* InitialViewController.swift */; };
 		3EDEDC441E6B47610013DF12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEDC431E6B47610013DF12 /* AppDelegate.swift */; };
 		3EDEDC461E6B47610013DF12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEDC451E6B47610013DF12 /* ViewController.swift */; };
 		3EDEDC491E6B47610013DF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEDC471E6B47610013DF12 /* Main.storyboard */; };
@@ -14,6 +20,9 @@
 		3EDEDC4E1E6B47610013DF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEDC4C1E6B47610013DF12 /* LaunchScreen.storyboard */; };
 		3EDEDC591E6B47610013DF12 /* DinosaurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEDC581E6B47610013DF12 /* DinosaurTests.swift */; };
 		3EDEDC641E6B47620013DF12 /* DinosaurUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEDC631E6B47620013DF12 /* DinosaurUITests.swift */; };
+		3EDEDC751E6B52F70013DF12 /* DonatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEDC741E6B52F70013DF12 /* DonatedViewController.swift */; };
+		3EDEDC771E6B536B0013DF12 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEDC761E6B536B0013DF12 /* User.swift */; };
+		EFCFC32D198C501ED59563CE /* Pods_Dinosaur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AC30AC5E527894DD194BA2 /* Pods_Dinosaur.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020002697D5A7C9DAD750996 /* Pods-Dinosaur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dinosaur.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dinosaur/Pods-Dinosaur.release.xcconfig"; sourceTree = "<group>"; };
+		3E310A231E6B754F0008FDE9 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		3E310A251E6B7B670008FDE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E61F7611E6B6D7100AD6F5E /* ChallengeDonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeDonationViewController.swift; sourceTree = "<group>"; };
+		3E61F7631E6B6EDD00AD6F5E /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3E61F7651E6B701F00AD6F5E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3E61F7671E6B704E00AD6F5E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		3EDEDC401E6B47610013DF12 /* Dinosaur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dinosaur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDEDC431E6B47610013DF12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EDEDC451E6B47610013DF12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +63,10 @@
 		3EDEDC5F1E6B47620013DF12 /* DinosaurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinosaurUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDEDC631E6B47620013DF12 /* DinosaurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinosaurUITests.swift; sourceTree = "<group>"; };
 		3EDEDC651E6B47620013DF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EDEDC741E6B52F70013DF12 /* DonatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonatedViewController.swift; sourceTree = "<group>"; };
+		3EDEDC761E6B536B0013DF12 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		499E54212BD1D603CB9366CB /* Pods-Dinosaur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dinosaur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dinosaur/Pods-Dinosaur.debug.xcconfig"; sourceTree = "<group>"; };
+		D4AC30AC5E527894DD194BA2 /* Pods_Dinosaur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dinosaur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCFC32D198C501ED59563CE /* Pods_Dinosaur.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,8 @@
 				3EDEDC571E6B47610013DF12 /* DinosaurTests */,
 				3EDEDC621E6B47620013DF12 /* DinosaurUITests */,
 				3EDEDC411E6B47610013DF12 /* Products */,
+				8C6356DE8883E91EFB7F696D /* Pods */,
+				67A5C37F1CC656FEEBEFA0E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +120,11 @@
 		3EDEDC421E6B47610013DF12 /* Dinosaur */ = {
 			isa = PBXGroup;
 			children = (
+				3E310A251E6B7B670008FDE9 /* GoogleService-Info.plist */,
+				3EDEDC731E6B4A1E0013DF12 /* Controllers */,
+				3EDEDC721E6B4A160013DF12 /* Models */,
+				3EDEDC711E6B4A100013DF12 /* Views */,
 				3EDEDC431E6B47610013DF12 /* AppDelegate.swift */,
-				3EDEDC451E6B47610013DF12 /* ViewController.swift */,
-				3EDEDC471E6B47610013DF12 /* Main.storyboard */,
 				3EDEDC4A1E6B47610013DF12 /* Assets.xcassets */,
 				3EDEDC4C1E6B47610013DF12 /* LaunchScreen.storyboard */,
 				3EDEDC4F1E6B47610013DF12 /* Info.plist */,
@@ -125,6 +150,53 @@
 			path = DinosaurUITests;
 			sourceTree = "<group>";
 		};
+		3EDEDC711E6B4A100013DF12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3EDEDC471E6B47610013DF12 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3EDEDC721E6B4A160013DF12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3EDEDC761E6B536B0013DF12 /* User.swift */,
+				3E310A231E6B754F0008FDE9 /* AuthService.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3EDEDC731E6B4A1E0013DF12 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EDEDC451E6B47610013DF12 /* ViewController.swift */,
+				3EDEDC741E6B52F70013DF12 /* DonatedViewController.swift */,
+				3E61F7611E6B6D7100AD6F5E /* ChallengeDonationViewController.swift */,
+				3E61F7631E6B6EDD00AD6F5E /* TabBarViewController.swift */,
+				3E61F7651E6B701F00AD6F5E /* ProfileViewController.swift */,
+				3E61F7671E6B704E00AD6F5E /* InitialViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		67A5C37F1CC656FEEBEFA0E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AC30AC5E527894DD194BA2 /* Pods_Dinosaur.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C6356DE8883E91EFB7F696D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				499E54212BD1D603CB9366CB /* Pods-Dinosaur.debug.xcconfig */,
+				020002697D5A7C9DAD750996 /* Pods-Dinosaur.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EDEDC681E6B47620013DF12 /* Build configuration list for PBXNativeTarget "Dinosaur" */;
 			buildPhases = (
+				97F43CFAF1B489FDAAB5CF2C /* [CP] Check Pods Manifest.lock */,
 				3EDEDC3C1E6B47610013DF12 /* Sources */,
 				3EDEDC3D1E6B47610013DF12 /* Frameworks */,
 				3EDEDC3E1E6B47610013DF12 /* Resources */,
+				EB7CF98024DE4D900AF6BBF5 /* [CP] Embed Pods Frameworks */,
+				A3B0FA3AB6488996031B07A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EDEDC4E1E6B47610013DF12 /* LaunchScreen.storyboard in Resources */,
+				3E310A261E6B7B670008FDE9 /* GoogleService-Info.plist in Resources */,
 				3EDEDC4B1E6B47610013DF12 /* Assets.xcassets in Resources */,
 				3EDEDC491E6B47610013DF12 /* Main.storyboard in Resources */,
 			);
@@ -257,13 +333,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		97F43CFAF1B489FDAAB5CF2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B0FA3AB6488996031B07A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dinosaur/Pods-Dinosaur-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7CF98024DE4D900AF6BBF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dinosaur/Pods-Dinosaur-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3EDEDC3C1E6B47610013DF12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDEDC771E6B536B0013DF12 /* User.swift in Sources */,
 				3EDEDC461E6B47610013DF12 /* ViewController.swift in Sources */,
+				3E61F7621E6B6D7100AD6F5E /* ChallengeDonationViewController.swift in Sources */,
 				3EDEDC441E6B47610013DF12 /* AppDelegate.swift in Sources */,
+				3E61F7661E6B701F00AD6F5E /* ProfileViewController.swift in Sources */,
+				3E61F7641E6B6EDD00AD6F5E /* TabBarViewController.swift in Sources */,
+				3EDEDC751E6B52F70013DF12 /* DonatedViewController.swift in Sources */,
+				3E310A241E6B754F0008FDE9 /* AuthService.swift in Sources */,
+				3E61F7681E6B704E00AD6F5E /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +544,7 @@
 		};
 		3EDEDC691E6B47620013DF12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499E54212BD1D603CB9366CB /* Pods-Dinosaur.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BX45H3NW68;
@@ -426,6 +558,7 @@
 		};
 		3EDEDC6A1E6B47620013DF12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020002697D5A7C9DAD750996 /* Pods-Dinosaur.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BX45H3NW68;
@@ -514,6 +647,7 @@
 				3EDEDC6A1E6B47620013DF12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EDEDC6B1E6B47620013DF12 /* Build configuration list for PBXNativeTarget "DinosaurTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +656,7 @@
 				3EDEDC6D1E6B47620013DF12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EDEDC6E1E6B47620013DF12 /* Build configuration list for PBXNativeTarget "DinosaurUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +665,7 @@
 				3EDEDC701E6B47620013DF12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
