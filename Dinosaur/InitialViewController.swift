@@ -117,6 +117,7 @@ extension InitialViewController: FirebaseLoginDelegate {
 
   func onLoginSuccess(user: User) {
     self.user = user
+    UserService().updateValuesForUser(user: self.user!)
     performSegue(withIdentifier: "toTabBarVC", sender: self)
   }
 

@@ -16,6 +16,7 @@ class ChallengeDonationViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        amount.text = "1"
         // Do any additional setup after loading the view.
     }
 
@@ -25,7 +26,18 @@ class ChallengeDonationViewController: UIViewController  {
     }
     
   @IBAction func stepperValueChanged(_ sender: UIStepper) {
-    amount.text = String(Int(sender.value))
+    amount.text = String(Int(sender.value + 1))
+  }
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "unwind" {
+      if let vc = segue.destination as? ViewController {
+        if let tabBarVC = vc.tabBarController as? TabBarViewController {
+          tabBarVC.user?.amountDonated = 0
+          tabBarVC.user?.challengeAmountPledged = Int(stepper.value + 1)
+        }
+      }
+    }
   }
 
     /*

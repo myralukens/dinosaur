@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
   var user: User?
   @IBOutlet weak var imageView: UIImageView?
   @IBOutlet weak var userName: UILabel!
+  @IBOutlet weak var amountDonated: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class ProfileViewController: UIViewController {
     }
 
   override func viewWillAppear(_ animated: Bool) {
+    if let tabBarVC = self.tabBarController as? TabBarViewController {
+      user = tabBarVC.user
+    }
     setUpProfile()
   }
 
@@ -54,6 +58,12 @@ class ProfileViewController: UIViewController {
       }
     } else {
       imageView?.image = defaultImage
+    }
+
+    if let amount = user?.amountDonated {
+        amountDonated.text = "$" + String(amount)
+    } else {
+      amountDonated.text = "$0"
     }
   }
 

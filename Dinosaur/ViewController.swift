@@ -40,6 +40,20 @@ class ViewController: UIViewController {
     // unwind from donation screen
   }
 
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "toDonated" {
+      if let donatedVC = segue.destination as? DonatedViewController {
+        if let tabBarVC = self.tabBarController as? TabBarViewController {
+          if let user = tabBarVC.user {
+            user.amountDonated = user.amountDonated! + user.challengeAmountPledged!
+            let intAmt = Int(user.amountDonated!)
+            donatedVC.amount = String(intAmt)
+          }
+        }
+      }
+    }
+  }
+
   @IBAction func prepare(forUnwind segue: UIStoryboardSegue) {
     donateButton.isHidden = false
     countMeInButton.isHidden = true

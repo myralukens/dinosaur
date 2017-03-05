@@ -10,9 +10,12 @@ import UIKit
 
 class DonatedViewController: UIViewController {
   @IBOutlet weak var amountDonated: UILabel!
+  var amount : String?
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    amountDonated.text = amount
+
     // Do any additional setup after loading the view, typically from a nib.
     _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.dismissView), userInfo: nil, repeats: true);
   }

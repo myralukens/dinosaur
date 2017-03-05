@@ -17,6 +17,8 @@ class User {
   var firstName: String?
   var lastName: String?
   var imageURL: String?
+  var amountDonated: Int?
+  var challengeAmountPledged: Int?
 
   init(fromUser user: FIRUser) {
     for profile in user.providerData {
@@ -39,12 +41,41 @@ class User {
     dictionary["firstName"] = firstName
     dictionary["lastName"] = lastName
     dictionary["imageURL"] = imageURL
+    dictionary["amountDonated"] = amountDonated
+    dictionary["challengeAmountPledged"] = challengeAmountPledged
 
     if let facebookId = facebookId {
       dictionary["facebookId"] = facebookId
     }
 
     return dictionary
+  }
+
+  func updateFromSnapshot(snapshot: FIRDataSnapshot) {
+    if let dictionary = snapshot.value as? [String : AnyObject] {
+      self.id = snapshot.key
+      if let facebookId = dictionary["facebookId"] as? String {
+        self.facebookId = facebookId
+      }
+      if let email = dictionary["email"] as? String {
+        self.email = email
+      }
+      if let firstName = dictionary["firstName"] as? String {
+        self.firstName = firstName
+      }
+      if let lastName = dictionary["lastName"] as? String {
+        self.lastName = lastName
+      }
+      if let imageURL = dictionary["imageURL"] as? String {
+        self.imageURL = imageURL
+      }
+      if let amountDonated = dictionary["amountDonated"] as? Int {
+        self.amountDonated = amountDonated
+      }
+      if let challengeAmountPledged = dictionary["challengeAmountPledged"] as? Int {
+        self.challengeAmountPledged = challengeAmountPledged
+      }
+    }
   }
 
 }
