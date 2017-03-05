@@ -14,7 +14,6 @@ class ThirdViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      support.font = UIFont(name: "EvelethRegular", size: 17)
 
         // Do any additional setup after loading the view.
     }

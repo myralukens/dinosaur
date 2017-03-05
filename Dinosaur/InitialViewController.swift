@@ -16,6 +16,7 @@ class InitialViewController: UIViewController {
     var user : User?
     var alreadyLoggedIn : Bool?
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var indicator: UIActivityIndicatorView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +29,34 @@ class InitialViewController: UIViewController {
         logInButton.clipsToBounds = true
         logInButton.layer.cornerRadius = 10.0
 
-
         authService.loginDelegate = self
 
       if (FBSDKAccessToken.current() != nil) {
         // segue to tab bar controller
         self.authService.authWithFacebook()
         alreadyLoggedIn = true
+
+        startLoading()
       }
     }
+
+  override func viewWillAppear(_ animated: Bool) {
+    stopLoading()
+  }
+
+  func startLoading() {
+    UIApplication.shared.beginIgnoringInteractionEvents()
+    logInButton?.isHidden = true
+    indicator?.isHidden = false
+    indicator?.startAnimating()
+  }
+
+  func stopLoading() {
+    UIApplication.shared.endIgnoringInteractionEvents()
+    indicator?.stopAnimating()
+    indicator?.isHidden = true
+    logInButton.isHidden = false
+  }
 
     @IBAction func logInWithFacebookAction(sender: AnyObject) {
       loginWithFacebook()
