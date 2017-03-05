@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dinosaur/ProfileViewController.swift"
-            timestampString = "510364835.405725"
+            timestampString = "510368678.371059"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -49,6 +49,54 @@
             endingLineNumber = "36"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dinosaur/ProfileViewController.swift"
+            timestampString = "510368621.183599"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "logOutAction(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dinosaur.ProfileViewController.logOutAction (sender : Swift.AnyObject) -&gt; ()"
+                  moduleName = "Dinosaur"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/myralukens/Documents/accesshack/Dinosaur/Dinosaur/ProfileViewController.swift"
+                  timestampString = "510368779.491472"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dinosaur.ProfileViewController.logOutAction (sender : Swift.AnyObject) -&gt; ()"
+                  moduleName = "Dinosaur"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/myralukens/Documents/accesshack/Dinosaur/Dinosaur/ProfileViewController.swift"
+                  timestampString = "510368779.493098"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

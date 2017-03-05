@@ -46,18 +46,4 @@ class UserService {
     })
   }
 
-//  func logOut() {
-//    if let appDelegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate {
-//      let storyboard = UIStoryboard(name: "FacebookLogin", bundle: Bundle.main)
-//      if let navVC = storyboard.instantiateInitialViewController() as? UINavigationController {
-//        do {
-//          try FIRAuth.auth()?.signOut()
-//        } catch {
-//          print("Error signing out")
-//        }
-//        appDelegate.window?.rootViewController = navVC
-//      }
-//    }
-//  }
-
 }

@@ -8,6 +8,10 @@
 
 import UIKit
 import AFNetworking
+import FBSDKLoginKit
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseInstanceID
 
 class ProfileViewController: UIViewController {
   var user: User?
@@ -25,6 +29,22 @@ class ProfileViewController: UIViewController {
       user = tabBarVC.user
     }
     setUpProfile()
+  }
+
+  @IBAction func logOutAction(sender: AnyObject) {
+    FBSDKAccessToken.setCurrent(nil)
+
+    if let appDelegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate {
+      let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+      if let vc = storyboard.instantiateInitialViewController() as? InitialViewController {
+        do {
+          try FIRAuth.auth()?.signOut()
+        } catch {
+          print("Error signing out")
+        }
+        appDelegate.window?.rootViewController = vc
+      }
+    }
   }
 
     override func didReceiveMemoryWarning() {
