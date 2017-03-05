@@ -34,6 +34,12 @@ class User {
     
   }
 
+
+  init(firstName: String, lastName: String, facebookId: String) {
+    self.firstName = firstName
+    self.lastName = lastName
+    self.imageURL = "https://graph.facebook.com/\(facebookId)/picture?type=large"
+  }
   func toAnyObject() -> [String : Any] {
     var dictionary = [String : Any]()
 
