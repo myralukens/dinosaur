@@ -19,10 +19,11 @@ class FriendTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+  override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+    if highlighted {
+      self.contentView.backgroundColor = UIColor(red: 133.0/255, green: 81.0/255, blue: 139.0/255, alpha: 1.0)
+    } else {
+      self.contentView.backgroundColor = UIColor(red: 106.0/255, green: 47.0/255, blue: 139.0/255, alpha: 1.0)
     }
-
+  }
 }

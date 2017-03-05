@@ -13,7 +13,7 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseInstanceID
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   var user: User?
   @IBOutlet weak var imageView: UIImageView?
   @IBOutlet weak var userName: UILabel!
@@ -96,5 +96,43 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+    let cell = tableView.dequeueReusableCell(withIdentifier: "previousChallenge", for: indexPath) as! ProfilePreviousChallengesTableViewCell
+
+    if indexPath.row == 0 {
+      cell.name.text = "Go to Starbucks"
+      cell.amount.text = "$10"
+    } else if indexPath.row == 1 {
+      cell.name.text = "Grab a drink"
+      cell.amount.text = "$5"
+    } else if indexPath.row == 2 {
+      cell.name.text = "Watch Netflix"
+      cell.amount.text = "$2"
+    } else {
+      cell.name.text = "Eat dessert"
+      cell.amount.text = "$5"
+    }
+
+    cell.backgroundColor = UIColor(red: 106.0/255, green: 47.0/255, blue: 139.0/255, alpha: 1.0)
+
+    return cell
+  }
+
+
+
+  public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 4
+  }
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    return
+  }
+
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+
 
 }

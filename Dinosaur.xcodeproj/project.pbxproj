@@ -23,6 +23,7 @@
 		3E8518A31E6C786600139629 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8518A01E6C786600139629 /* FriendsViewController.swift */; };
 		3E8518A41E6C786600139629 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8518A11E6C786600139629 /* FriendDetailViewController.swift */; };
 		3E8518A51E6C786600139629 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8518A21E6C786600139629 /* FriendTableViewCell.swift */; };
+		3E8518A91E6CB99500139629 /* ProfilePreviousChallengesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8518A81E6CB99500139629 /* ProfilePreviousChallengesTableViewCell.swift */; };
 		3EDEDC441E6B47610013DF12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEDC431E6B47610013DF12 /* AppDelegate.swift */; };
 		3EDEDC461E6B47610013DF12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDEDC451E6B47610013DF12 /* ViewController.swift */; };
 		3EDEDC491E6B47610013DF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEDC471E6B47610013DF12 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		3E8518A01E6C786600139629 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		3E8518A11E6C786600139629 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 		3E8518A21E6C786600139629 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		3E8518A81E6CB99500139629 /* ProfilePreviousChallengesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePreviousChallengesTableViewCell.swift; sourceTree = "<group>"; };
 		3EDEDC401E6B47610013DF12 /* Dinosaur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dinosaur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDEDC431E6B47610013DF12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EDEDC451E6B47610013DF12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				3E03389E1E6BA04600C8FCFD /* FirstViewController.swift */,
 				3E0338A01E6BA04F00C8FCFD /* SecondViewController.swift */,
 				3E0338A21E6BA05700C8FCFD /* ThirdViewController.swift */,
+				3E8518A81E6CB99500139629 /* ProfilePreviousChallengesTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				3E0338A31E6BA05700C8FCFD /* ThirdViewController.swift in Sources */,
 				3EDEDC751E6B52F70013DF12 /* DonatedViewController.swift in Sources */,
 				3E310A241E6B754F0008FDE9 /* AuthService.swift in Sources */,
+				3E8518A91E6CB99500139629 /* ProfilePreviousChallengesTableViewCell.swift in Sources */,
 				3E61F7681E6B704E00AD6F5E /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
