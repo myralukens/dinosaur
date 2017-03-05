@@ -40,10 +40,6 @@ class InitialViewController: UIViewController {
       }
     }
 
-  override func viewWillAppear(_ animated: Bool) {
-    stopLoading()
-  }
-
   func startLoading() {
     UIApplication.shared.beginIgnoringInteractionEvents()
     logInButton?.isHidden = true
@@ -60,6 +56,7 @@ class InitialViewController: UIViewController {
 
     @IBAction func logInWithFacebookAction(sender: AnyObject) {
       loginWithFacebook()
+      startLoading()
     }
 
     func loginWithFacebook() {
@@ -163,11 +160,13 @@ extension InitialViewController: FirebaseLoginDelegate {
     if segue.identifier == "toTabBarVC" {
       if let tabBarVC = segue.destination as? TabBarViewController {
         tabBarVC.user = user
+        stopLoading()
         alreadyLoggedIn = nil
       }
     } else if segue.identifier == "toIntro" {
       if let pageVC = segue.destination as? PageViewController {
         pageVC.user = user
+        stopLoading()
         alreadyLoggedIn = nil
       }
     }

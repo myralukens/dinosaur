@@ -44,7 +44,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Donate every time you tip" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tkp-gu-qSi">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Donate every time you tip" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tkp-gu-qSi">
                                 <rect key="frame" x="31" y="91" width="313" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="f0X-qB-t1e"/>
@@ -53,7 +53,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QpD-PG-bb5">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QpD-PG-bb5">
                                 <rect key="frame" x="31" y="230" width="313" height="274"/>
                                 <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -340,7 +340,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Or-Su-UhJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Or-Su-UhJ">
                                 <rect key="frame" x="67" y="269" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -390,6 +390,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="roA-0Y-443">
+                                <rect key="frame" x="169" y="544" width="37" height="37"/>
+                                <color key="color" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd2-bn-ccG">
                                 <rect key="frame" x="77" y="544" width="220" height="40"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -404,14 +408,12 @@
                                     <action selector="logInWithFacebookActionWithSender:" destination="Lft-9x-oA3" eventType="touchUpInside" id="Spq-Q3-LtJ"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="roA-0Y-443">
-                                <rect key="frame" x="161" y="546" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zE8-Y2-iXB" firstAttribute="top" secondItem="Sd2-bn-ccG" secondAttribute="bottom" constant="83" id="Vgi-1W-11a"/>
+                            <constraint firstItem="roA-0Y-443" firstAttribute="top" secondItem="Sd2-bn-ccG" secondAttribute="top" id="kKD-JK-dES"/>
+                            <constraint firstItem="roA-0Y-443" firstAttribute="centerX" secondItem="Sd2-bn-ccG" secondAttribute="centerX" id="li5-C3-n7U"/>
                             <constraint firstItem="Sd2-bn-ccG" firstAttribute="centerX" secondItem="11Q-ai-zE8" secondAttribute="centerX" id="wFJ-90-xt5"/>
                         </constraints>
                     </view>
@@ -466,14 +468,14 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Abortions are the least accessible for the people who need them most." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-co-6cU">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Abortions are the least accessible for the people who need them most." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-co-6cU">
                                 <rect key="frame" x="16" y="39" width="335" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tBf-C1-ZpQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tBf-C1-ZpQ">
                                 <rect key="frame" x="16" y="128" width="343" height="427"/>
                                 <string key="text">The current system puts up barriers that are especially hard for low-income women, young women, and women of color to overcome. As a result, the fight for abortion access is a fight for economic, racial, and reproductive justice. 
 
@@ -530,7 +532,7 @@ Local abortion funds connect with patients and provide financial support, transp
                                     <segue destination="8Hg-kD-6EE" kind="show" identifier="toTabBarVC" id="ExK-Hb-Hrz"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Who’s working to change the system?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4QW-T1-TTk">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Who’s working to change the system?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4QW-T1-TTk">
                                 <rect key="frame" x="16" y="44" width="343" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="alQ-BL-nwf"/>
@@ -539,7 +541,7 @@ Local abortion funds connect with patients and provide financial support, transp
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ptg-Rh-ahP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ptg-Rh-ahP">
                                 <rect key="frame" x="16" y="106" width="343" height="435"/>
                                 <string key="text">The National Network of Abortion Funds (NNAF) supports abortion funds across the United States and works to remove barriers to abortion. NNAF is working to promote inclusivity and strengthen the entire network of abortion funds, working on:
 
@@ -608,7 +610,7 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                     <segue destination="8Hg-kD-6EE" kind="show" identifier="toTabBarVC" id="iuw-EB-9WQ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What can I do?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nmh-Wz-0hu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="What can I do?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nmh-Wz-0hu">
                                 <rect key="frame" x="16" y="50" width="343" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="LA0-At-aXP"/>
@@ -617,14 +619,14 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hs9-fH-Wcm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hs9-fH-Wcm">
                                 <rect key="frame" x="16" y="112" width="343" height="112"/>
                                 <string key="text">1) Support the work. We need to redistribute our resources - what if you donated a dollar to support abortion access each time you bought coffee? What if everyone did?</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="2) Shape the culture. Read more about abortion and spread the word about why abortion access is so important!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XSi-2E-eli">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="2) Shape the culture. Read more about abortion and spread the word about why abortion access is so important!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XSi-2E-eli">
                                 <rect key="frame" x="16" y="232" width="343" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="7qk-3S-btk"/>
@@ -752,7 +754,7 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhY-FB-6dt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhY-FB-6dt">
                                 <rect key="frame" x="67" y="384" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
