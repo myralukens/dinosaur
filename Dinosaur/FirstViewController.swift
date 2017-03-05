@@ -9,6 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+  @IBOutlet weak var info: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

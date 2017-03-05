@@ -15,6 +15,7 @@ class InitialViewController: UIViewController {
     let authService = AuthService()
     var user : User?
     var alreadyLoggedIn : Bool?
+    @IBOutlet weak var logInButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,10 @@ class InitialViewController: UIViewController {
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         self.view.backgroundColor = UIColor(patternImage: image)
+
+        logInButton.clipsToBounds = true
+        logInButton.layer.cornerRadius = 10.0
+
 
         authService.loginDelegate = self
 

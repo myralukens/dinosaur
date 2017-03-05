@@ -23,25 +23,20 @@ class ViewController: UIViewController {
 
   @IBOutlet weak var storyOfWeek: UITextView!
   @IBOutlet weak var challengeOfWeek: UITextView!
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    storyOfWeek.font = UIFont(name: "EvelethCleanThin", size: 16)
 
     storyOfWeek.clipsToBounds = true
     storyOfWeek.layer.cornerRadius = 10.0
     storyOfWeek.layer.borderColor = UIColor.white.cgColor
     storyOfWeek.layer.borderWidth = 1.0
 
-    challengeOfWeek.font = UIFont(name: "EvelethCleanThin", size: 16)
 
     challengeOfWeek.clipsToBounds = true
     challengeOfWeek.layer.cornerRadius = 10.0
     challengeOfWeek.layer.borderColor = UIColor.white.cgColor
     challengeOfWeek.layer.borderWidth = 1.0
-
-    daysLeftStatic.font = UIFont(name: "EvelethCleanThin", size: 16)
-    daysLeftDynamic.font = UIFont(name: "EvelethCleanThin", size: 16)
 
     donateButton.isHidden = true
     daysLeftStatic.isHidden = true
@@ -82,6 +77,26 @@ class ViewController: UIViewController {
     progress.isHidden = false
     daysLeftDynamic.text = "5"
     challengeProgress.isHidden = false
+
+    var frame = storyOfWeek.frame
+    frame.size.height = 180
+    storyOfWeek.frame = frame
+    storyOfWeek.isHidden = true
+
+    let textView = UITextView(frame: frame)
+    textView.textColor = UIColor.white
+    textView.backgroundColor = UIColor.clear
+
+    textView.clipsToBounds = true
+    textView.layer.cornerRadius = 10.0
+    textView.layer.borderColor = UIColor.white.cgColor
+    textView.layer.borderWidth = 1.0
+
+    textView.font = UIFont(name: "Helvetica Neue", size: 17)
+    textView.text = storyOfWeek.text
+
+    self.view.addSubview(textView)
+
 
     //set progress to 0/5 days initially
     progress.setProgress(0, animated: true)

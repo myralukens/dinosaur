@@ -10,8 +10,11 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+  @IBOutlet weak var support: UITextView!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
+      support.font = UIFont(name: "EvelethRegular", size: 17)
 
         // Do any additional setup after loading the view.
     }
