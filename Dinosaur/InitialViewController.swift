@@ -14,6 +14,7 @@ import Firebase
 class InitialViewController: UIViewController {
     let authService = AuthService()
     var user : User?
+    var alreadyLoggedIn : Bool?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class InitialViewController: UIViewController {
       if (FBSDKAccessToken.current() != nil) {
         // segue to tab bar controller
         self.authService.authWithFacebook()
-        performSegue(withIdentifier: "toTabBarVC", sender: self)
+        alreadyLoggedIn = true
       }
     }
 
@@ -43,6 +44,7 @@ class InitialViewController: UIViewController {
           self.authService.authWithFacebook()
         }
       }
+      alreadyLoggedIn = false
     }
 
     func onFacebookError() {
@@ -118,13 +120,22 @@ extension InitialViewController: FirebaseLoginDelegate {
   func onLoginSuccess(user: User) {
     self.user = user
     UserService().updateValuesForUser(user: self.user!)
-    performSegue(withIdentifier: "toTabBarVC", sender: self)
+
+    if alreadyLoggedIn! {
+      performSegue(withIdentifier: "toTabBarVC", sender: self)
+    } else {
+      performSegue(withIdentifier: "toIntro", sender: self)
+    }
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "toTabBarVC" {
       if let tabBarVC = segue.destination as? TabBarViewController {
         tabBarVC.user = user
+      }
+    } else if segue.identifier == "toIntro" {
+      if let pageVC = segue.destination as? PageViewController {
+        pageVC.user = user
       }
     }
   }

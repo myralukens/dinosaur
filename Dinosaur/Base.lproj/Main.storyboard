@@ -98,7 +98,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="6n9-6L-fj9"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="home" selectedImage="home" id="6n9-6L-fj9"/>
                     <connections>
                         <outlet property="challengeProgress" destination="Lzx-2s-Mae" id="Wo5-ya-lhg"/>
                         <outlet property="countMeInButton" destination="Y7b-9D-G3q" id="Jwy-De-eIM"/>
@@ -229,11 +229,100 @@
                     </view>
                     <connections>
                         <segue destination="8Hg-kD-6EE" kind="show" identifier="toTabBarVC" id="Jx5-Mh-Dnh"/>
+                        <segue destination="clW-Z2-vgQ" kind="show" identifier="toIntro" id="l3m-YV-yWn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GaR-FM-J7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2138" y="-1"/>
+            <point key="canvasLocation" x="-2690" y="63"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="uo9-1J-qKW">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="clW-Z2-vgQ" customClass="PageViewController" customModule="Dinosaur" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Mt-z7-f6k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2297" y="831"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="p7c-dF-yqE">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WpE-bI-yAf" customClass="FirstViewController" customModule="Dinosaur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FY5-fM-UJV"/>
+                        <viewControllerLayoutGuide type="bottom" id="BG1-TL-YCY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kku-Ss-sqb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="V1o-Uu-fD7">
+                                <rect key="frame" x="168" y="630" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bt9-he-BfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2650" y="1562"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="b57-ex-wSe">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pA5-Ax-iqF" customClass="SecondViewController" customModule="Dinosaur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XNZ-lm-UEx"/>
+                        <viewControllerLayoutGuide type="bottom" id="DwJ-TD-8v3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Ne-lv-rXe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="IoC-j0-LAZ">
+                                <rect key="frame" x="168" y="630" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Phd-vl-i4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1953" y="1561"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="oMb-UV-k27">
+            <objects>
+                <viewController storyboardIdentifier="ThirdViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zlC-am-cYk" customClass="ThirdViewController" customModule="Dinosaur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3iL-1W-PXU"/>
+                        <viewControllerLayoutGuide type="bottom" id="MFB-kI-LCm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hf8-pU-lcc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRS-LS-clX">
+                                <rect key="frame" x="171" y="588" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="8Hg-kD-6EE" kind="show" id="Wa3-tx-zIZ"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="21y-uJ-tRr">
+                                <rect key="frame" x="168" y="630" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLj-Gt-XP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242.4000000000001" y="1560.2698650674663"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="LdO-Pj-KkJ">
@@ -324,7 +413,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" id="kMC-UU-aM0" userLabel="Item 3"/>
+                    <tabBarItem key="tabBarItem" title="Item 3" image="profile" selectedImage="profile" id="kMC-UU-aM0" userLabel="Item 3"/>
                     <connections>
                         <outlet property="amountDonated" destination="eP4-Pv-CHZ" id="bkI-iB-gj5"/>
                         <outlet property="imageView" destination="PZz-pG-q2B" id="jln-yX-TdK"/>
@@ -384,5 +473,10 @@
     </scenes>
     <resources>
         <image name="facebook_white" width="22" height="22"/>
+        <image name="home" width="25" height="25"/>
+        <image name="profile" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Wa3-tx-zIZ"/>
+    </inferredMetricsTieBreakers>
 </document>
