@@ -349,7 +349,7 @@ ACCESS bought a roundtrip bus ticket for Cora and matched her with a volunteer, 
                                 <rect key="frame" x="16" y="39" width="335" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tBf-C1-ZpQ">
@@ -415,7 +415,7 @@ Local abortion funds connect with patients and provide financial support, transp
                                     <constraint firstAttribute="height" constant="81" id="alQ-BL-nwf"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ptg-Rh-ahP">
@@ -493,7 +493,7 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                     <constraint firstAttribute="height" constant="75" id="LA0-At-aXP"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hs9-fH-Wcm">
@@ -512,43 +512,46 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your support matters - Go ahead and contribu!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ovq-oK-1FR">
-                                <rect key="frame" x="48" y="392" width="278" height="76"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Go ahead and contribu!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLE-D8-Nnx">
+                                <rect key="frame" x="48" y="423" width="268" height="21"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your support matters -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-Eh-sb6">
+                                <rect key="frame" x="52" y="394" width="271" height="21"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.090196078430000007" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="21y-uJ-tRr" firstAttribute="top" secondItem="WLE-D8-Nnx" secondAttribute="bottom" constant="105" id="2Y7-hP-VIF"/>
                             <constraint firstAttribute="bottom" secondItem="KWh-xS-n6s" secondAttribute="bottom" constant="20" symbolic="YES" id="3fj-og-O3h"/>
                             <constraint firstItem="hs9-fH-Wcm" firstAttribute="top" secondItem="3iL-1W-PXU" secondAttribute="bottom" constant="92" id="98E-Ry-eww"/>
+                            <constraint firstItem="2GZ-Eh-sb6" firstAttribute="leading" secondItem="hf8-pU-lcc" secondAttribute="leadingMargin" constant="36" id="D2l-lv-4pV"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="leading" secondItem="hf8-pU-lcc" secondAttribute="leadingMargin" id="ESg-fP-M1h"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="trailing" secondItem="Nmh-Wz-0hu" secondAttribute="trailing" id="I90-Wz-IvW"/>
-                            <constraint firstItem="Ovq-oK-1FR" firstAttribute="top" secondItem="XSi-2E-eli" secondAttribute="bottom" constant="83" id="Ja4-cz-HhJ"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="top" secondItem="hs9-fH-Wcm" secondAttribute="bottom" constant="8" symbolic="YES" id="Nyc-O3-zpo"/>
-                            <constraint firstItem="21y-uJ-tRr" firstAttribute="top" secondItem="Ovq-oK-1FR" secondAttribute="bottom" constant="81" id="RAc-5q-fIL"/>
-                            <constraint firstItem="21y-uJ-tRr" firstAttribute="top" secondItem="Ovq-oK-1FR" secondAttribute="bottom" constant="81" id="SYs-jJ-Wlj"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="centerX" secondItem="KWh-xS-n6s" secondAttribute="centerX" id="TQE-Ge-Ge4"/>
+                            <constraint firstItem="WLE-D8-Nnx" firstAttribute="top" secondItem="2GZ-Eh-sb6" secondAttribute="bottom" constant="8" id="XJa-E1-IKy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2GZ-Eh-sb6" secondAttribute="trailing" constant="36" id="aLD-dH-AbW"/>
                             <constraint firstItem="Nmh-Wz-0hu" firstAttribute="top" secondItem="3iL-1W-PXU" secondAttribute="bottom" constant="30" id="buv-pC-QlJ"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="leading" secondItem="hs9-fH-Wcm" secondAttribute="leading" id="e8j-3F-MPf"/>
-                            <constraint firstItem="XSi-2E-eli" firstAttribute="centerX" secondItem="Ovq-oK-1FR" secondAttribute="centerX" id="eM9-LE-wC4"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="centerX" secondItem="21y-uJ-tRr" secondAttribute="centerX" id="gqd-tH-KGh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ovq-oK-1FR" secondAttribute="trailing" constant="33" id="iW0-of-na9"/>
+                            <constraint firstItem="WLE-D8-Nnx" firstAttribute="leading" secondItem="hf8-pU-lcc" secondAttribute="leadingMargin" constant="32" id="hmG-Va-6f2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="21y-uJ-tRr" secondAttribute="trailing" constant="152" id="k8f-jn-mrv"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="trailing" secondItem="hs9-fH-Wcm" secondAttribute="trailing" id="kgK-RM-Z3y"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="top" secondItem="hf8-pU-lcc" secondAttribute="top" constant="232" id="lev-rK-ISG"/>
                             <constraint firstItem="KWh-xS-n6s" firstAttribute="top" secondItem="21y-uJ-tRr" secondAttribute="bottom" constant="31" id="oNc-TG-ajd"/>
                             <constraint firstItem="21y-uJ-tRr" firstAttribute="leading" secondItem="hf8-pU-lcc" secondAttribute="leadingMargin" constant="152" id="pIc-es-Db8"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="top" secondItem="hs9-fH-Wcm" secondAttribute="bottom" constant="8" id="rZr-fc-1cZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WLE-D8-Nnx" secondAttribute="trailing" constant="43" id="sL1-bo-7QC"/>
                             <constraint firstItem="KWh-xS-n6s" firstAttribute="top" secondItem="21y-uJ-tRr" secondAttribute="bottom" constant="31" id="uYg-VX-w3d"/>
                             <constraint firstItem="XSi-2E-eli" firstAttribute="leading" secondItem="Nmh-Wz-0hu" secondAttribute="leading" id="v8y-9p-794"/>
-                            <constraint firstItem="Ovq-oK-1FR" firstAttribute="leading" secondItem="hf8-pU-lcc" secondAttribute="leadingMargin" constant="32" id="waq-x6-DM2"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="support" destination="Ovq-oK-1FR" id="JMJ-zw-YS0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLj-Gt-XP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -592,18 +595,17 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwU-sC-Oyt">
                                 <rect key="frame" x="156" y="112" width="203" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usn-ew-UEq">
-                                <rect key="frame" x="294" y="20" width="55" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brD-hF-1IO">
+                                <rect key="frame" x="77" y="288" width="220" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log Out"/>
-                                <connections>
-                                    <action selector="logOutActionWithSender:" destination="T4f-OY-HVA" eventType="touchUpInside" id="pVp-Zf-r7d"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-Pv-CHZ">
                                 <rect key="frame" x="237" y="322" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -628,18 +630,22 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhY-FB-6dt">
                                 <rect key="frame" x="67" y="384" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brD-hF-1IO">
-                                <rect key="frame" x="77" y="288" width="220" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usn-ew-UEq">
+                                <rect key="frame" x="266" y="28" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutActionWithSender:" destination="T4f-OY-HVA" eventType="touchUpInside" id="pVp-Zf-r7d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.090196078430000007" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -666,27 +672,38 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WOO, you have donated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJm-j4-zN4">
-                                <rect key="frame" x="94" y="149" width="186" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have donated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJm-j4-zN4">
+                                <rect key="frame" x="85" y="221" width="205" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwU-aX-iez">
-                                <rect key="frame" x="176" y="249" width="42" height="21"/>
+                                <rect key="frame" x="179" y="248" width="86" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="30"/>
+                                <color key="textColor" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCw-MG-CUf">
-                                <rect key="frame" x="157" y="250" width="11" height="21"/>
+                                <rect key="frame" x="157" y="250" width="21" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="30"/>
+                                <color key="textColor" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Way to go!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwr-0q-cyO">
+                                <rect key="frame" x="101" y="142" width="173" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wb2-Qe-Gd1">
+                                <rect key="frame" x="108" y="353" width="159" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.090196078430000007" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -698,15 +715,16 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AbT-pz-CAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rje-am-MI5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="568" y="960"/>
+            <point key="canvasLocation" x="567.20000000000005" y="959.37031484257875"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="750" height="750"/>
         <image name="facebook_white" width="22" height="22"/>
         <image name="home" width="25" height="25"/>
         <image name="profile" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jx5-Mh-Dnh"/>
+        <segue reference="iuw-EB-9WQ"/>
     </inferredMetricsTieBreakers>
 </document>
