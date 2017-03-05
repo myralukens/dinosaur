@@ -27,6 +27,7 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
       
       self.tableView.rowHeight = 100
+      self.tableView.backgroundColor = UIColor(red: 106.0/255, green: 47.0/255, blue: 139.0/255, alpha: 1.0)
       
       
       //async load for photo
