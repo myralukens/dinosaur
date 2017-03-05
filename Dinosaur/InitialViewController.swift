@@ -132,10 +132,12 @@ extension InitialViewController: FirebaseLoginDelegate {
     if segue.identifier == "toTabBarVC" {
       if let tabBarVC = segue.destination as? TabBarViewController {
         tabBarVC.user = user
+        alreadyLoggedIn = nil
       }
     } else if segue.identifier == "toIntro" {
       if let pageVC = segue.destination as? PageViewController {
         pageVC.user = user
+        alreadyLoggedIn = nil
       }
     }
   }

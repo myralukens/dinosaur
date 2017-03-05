@@ -32,4 +32,15 @@ class FirstViewController: UIViewController {
     }
     */
 
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "toTabBarVC" {
+      if let tabBarVC = segue.destination as? TabBarViewController {
+        if let pgVC = self.parent as? PageViewController {
+          tabBarVC.user = pgVC.user
+        }
+      }
+    }
+  }
+
 }
