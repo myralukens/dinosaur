@@ -21,7 +21,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item 2-->
+        <!--Home-->
         <scene sceneID="Bje-F0-Ast">
             <objects>
                 <viewController id="oD8-MA-23s" customClass="ViewController" customModule="Dinosaur" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QpD-PG-bb5">
-                                <rect key="frame" x="31" y="230" width="313" height="274"/>
+                                <rect key="frame" x="31" y="230" width="313" height="271"/>
                                 <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -86,23 +86,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="days left in this challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHh-XG-5tQ">
-                                <rect key="frame" x="100" y="435" width="244" height="20"/>
+                                <rect key="frame" x="100" y="432" width="196" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Mn-M1-QV3">
-                                <rect key="frame" x="74" y="478" width="216" height="2"/>
+                                <rect key="frame" x="74" y="475" width="216" height="5"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="0aD-3L-f7a"/>
+                                </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzx-2s-Mae">
-                                <rect key="frame" x="62" y="406" width="234" height="20"/>
-                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3N-oP-ijg">
-                                <rect key="frame" x="68" y="435" width="18" height="20"/>
+                                <rect key="frame" x="82" y="433" width="18" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="2Uz-0K-xFg"/>
                                 </constraints>
@@ -110,21 +107,26 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzx-2s-Mae">
+                                <rect key="frame" x="73" y="404" width="228" height="20"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764705882353" green="0.090196078431372548" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Y7b-9D-G3q" firstAttribute="top" secondItem="9FR-E3-Wtl" secondAttribute="top" id="2oh-Lr-nei"/>
                             <constraint firstItem="QpD-PG-bb5" firstAttribute="leading" secondItem="7ux-Ts-cBL" secondAttribute="leadingMargin" constant="15" id="3Dr-H9-0OY"/>
-                            <constraint firstItem="VHh-XG-5tQ" firstAttribute="top" secondItem="Lzx-2s-Mae" secondAttribute="bottom" constant="9" id="5AS-Br-6zV"/>
+                            <constraint firstItem="VHh-XG-5tQ" firstAttribute="top" secondItem="Lzx-2s-Mae" secondAttribute="bottom" constant="8" id="5AS-Br-6zV"/>
                             <constraint firstItem="Y7b-9D-G3q" firstAttribute="top" secondItem="9Mn-M1-QV3" secondAttribute="bottom" constant="64" id="6j2-WP-lFD"/>
-                            <constraint firstItem="VHh-XG-5tQ" firstAttribute="leading" secondItem="e3N-oP-ijg" secondAttribute="trailing" constant="14" id="9di-B5-DQ3"/>
                             <constraint firstItem="Tkp-gu-qSi" firstAttribute="centerX" secondItem="dhk-Rm-VEr" secondAttribute="centerX" id="G1J-Wh-Cbu"/>
-                            <constraint firstItem="9Mn-M1-QV3" firstAttribute="top" secondItem="e3N-oP-ijg" secondAttribute="bottom" constant="23" id="HJH-9P-WOu"/>
+                            <constraint firstItem="9Mn-M1-QV3" firstAttribute="top" secondItem="e3N-oP-ijg" secondAttribute="bottom" constant="22" id="HJH-9P-WOu"/>
                             <constraint firstItem="9Mn-M1-QV3" firstAttribute="leading" secondItem="7ux-Ts-cBL" secondAttribute="leadingMargin" constant="58" id="JN4-Mc-XaP"/>
                             <constraint firstItem="Zry-je-0WB" firstAttribute="leading" secondItem="7ux-Ts-cBL" secondAttribute="leadingMargin" constant="69" id="KTA-tN-5jn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dhk-Rm-VEr" secondAttribute="trailing" constant="15" id="Ktd-bu-Cvi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zry-je-0WB" secondAttribute="trailing" constant="69" id="LGF-d2-2id"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VHh-XG-5tQ" secondAttribute="trailing" constant="15" id="MD6-pM-pMq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VHh-XG-5tQ" secondAttribute="trailing" constant="63" id="MD6-pM-pMq"/>
                             <constraint firstItem="Tkp-gu-qSi" firstAttribute="centerX" secondItem="QpD-PG-bb5" secondAttribute="centerX" id="MIO-Ry-4qw"/>
                             <constraint firstItem="Y7b-9D-G3q" firstAttribute="centerX" secondItem="QpD-PG-bb5" secondAttribute="centerX" id="MWD-0Y-Pr9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Mn-M1-QV3" secondAttribute="trailing" constant="69" id="Q55-fs-cYE"/>
@@ -134,22 +136,22 @@
                             <constraint firstItem="Y7b-9D-G3q" firstAttribute="firstBaseline" secondItem="9FR-E3-Wtl" secondAttribute="baseline" id="c1s-42-Tsc"/>
                             <constraint firstItem="QpD-PG-bb5" firstAttribute="top" secondItem="Zry-je-0WB" secondAttribute="bottom" constant="8" symbolic="YES" id="c4w-cb-0ln"/>
                             <constraint firstItem="Tkp-gu-qSi" firstAttribute="centerX" secondItem="Y7b-9D-G3q" secondAttribute="centerX" id="eeu-nC-cAw"/>
-                            <constraint firstItem="Lzx-2s-Mae" firstAttribute="leading" secondItem="7ux-Ts-cBL" secondAttribute="leadingMargin" constant="46" id="fsr-Ty-hHx"/>
-                            <constraint firstItem="Lzx-2s-Mae" firstAttribute="top" secondItem="QpD-PG-bb5" secondAttribute="bottom" constant="-98" id="fuz-si-eHp"/>
+                            <constraint firstItem="Lzx-2s-Mae" firstAttribute="leading" secondItem="7ux-Ts-cBL" secondAttribute="leadingMargin" constant="57" id="fsr-Ty-hHx"/>
+                            <constraint firstItem="Lzx-2s-Mae" firstAttribute="top" secondItem="QpD-PG-bb5" secondAttribute="bottom" constant="-97" id="fuz-si-eHp"/>
                             <constraint firstItem="dhk-Rm-VEr" firstAttribute="leading" secondItem="7ux-Ts-cBL" secondAttribute="leadingMargin" constant="15" id="g9z-lz-3gY"/>
                             <constraint firstItem="DM5-hu-3nI" firstAttribute="top" secondItem="Y7b-9D-G3q" secondAttribute="bottom" constant="44" id="lnv-5p-PNE"/>
-                            <constraint firstItem="e3N-oP-ijg" firstAttribute="leading" secondItem="7ux-Ts-cBL" secondAttribute="leadingMargin" constant="52" id="n9Y-ZK-MEI"/>
+                            <constraint firstItem="e3N-oP-ijg" firstAttribute="leading" secondItem="7ux-Ts-cBL" secondAttribute="leadingMargin" constant="66" id="n9Y-ZK-MEI"/>
                             <constraint firstItem="Y7b-9D-G3q" firstAttribute="baseline" secondItem="9FR-E3-Wtl" secondAttribute="firstBaseline" id="neZ-Vz-xJ1"/>
                             <constraint firstItem="Tkp-gu-qSi" firstAttribute="centerX" secondItem="9FR-E3-Wtl" secondAttribute="centerX" id="qB2-6o-bBp"/>
                             <constraint firstItem="Tkp-gu-qSi" firstAttribute="top" secondItem="dhk-Rm-VEr" secondAttribute="bottom" constant="8" id="qWU-fl-h0U"/>
                             <constraint firstItem="dhk-Rm-VEr" firstAttribute="top" secondItem="wzA-hf-Amz" secondAttribute="bottom" constant="43" id="qmP-kQ-pXm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Lzx-2s-Mae" secondAttribute="trailing" constant="63" id="tlo-XV-UCn"/>
-                            <constraint firstItem="VHh-XG-5tQ" firstAttribute="leading" secondItem="e3N-oP-ijg" secondAttribute="trailing" constant="14" id="vVo-fK-5hZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lzx-2s-Mae" secondAttribute="trailing" constant="58" id="tlo-XV-UCn"/>
+                            <constraint firstItem="VHh-XG-5tQ" firstAttribute="leading" secondItem="e3N-oP-ijg" secondAttribute="trailing" id="vVo-fK-5hZ"/>
                             <constraint firstItem="9Mn-M1-QV3" firstAttribute="top" secondItem="VHh-XG-5tQ" secondAttribute="bottom" constant="23" id="yMx-LH-Z6g"/>
                             <constraint firstItem="9Mn-M1-QV3" firstAttribute="top" secondItem="VHh-XG-5tQ" secondAttribute="bottom" constant="23" id="ynw-0a-asR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="home" selectedImage="home" id="6n9-6L-fj9"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home_filled" id="6n9-6L-fj9"/>
                     <connections>
                         <outlet property="challengeOfWeek" destination="Tkp-gu-qSi" id="0NY-Sk-ASc"/>
                         <outlet property="challengeProgress" destination="Lzx-2s-Mae" id="Wo5-ya-lhg"/>
@@ -239,7 +241,7 @@
             </objects>
             <point key="canvasLocation" x="933.60000000000002" y="213.64317841079463"/>
         </scene>
-        <!--Item 1-->
+        <!--Friends-->
         <scene sceneID="3Xg-Ud-k38">
             <objects>
                 <viewController id="fLn-aP-HdB" customClass="FriendsViewController" customModule="Dinosaur" customModuleProvider="target" sceneMemberID="viewController">
@@ -313,17 +315,21 @@
                                     <outlet property="delegate" destination="fLn-aP-HdB" id="IBW-gh-EBs"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEj-6J-eUH">
-                                <rect key="frame" x="60" y="45" width="255" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEj-6J-eUH">
+                                <rect key="frame" x="63" y="45" width="249" height="59"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.090196078430000007" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WEj-6J-eUH" secondAttribute="trailing" constant="47" id="Agl-dO-a8O"/>
+                            <constraint firstItem="WEj-6J-eUH" firstAttribute="leading" secondItem="OjQ-gl-4UV" secondAttribute="leadingMargin" constant="47" id="YVZ-9h-0Ek"/>
+                            <constraint firstItem="WEj-6J-eUH" firstAttribute="top" secondItem="Mkv-I4-Bvg" secondAttribute="bottom" constant="25" id="tmf-qh-RM0"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="YhI-Vd-PSp"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="friends" selectedImage="friends_filled" id="YhI-Vd-PSp"/>
                     <connections>
                         <outlet property="tableView" destination="hNx-hi-GrF" id="vFZ-sz-d2L"/>
                     </connections>
@@ -348,42 +354,15 @@
                                 <rect key="frame" x="16" y="93" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-tK-MUq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="VbV-Yl-nPy">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="71X-bb-KaN">
-                                            <connections>
-                                                <segue destination="fcT-kQ-WV6" kind="unwind" unwindAction="unwindWithUnwindSegue:" id="xSt-gj-B6Z"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euf-tl-5jJ">
-                                <rect key="frame" x="174" y="158" width="203" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iz-BT-KZb">
-                                <rect key="frame" x="64" y="279" width="220" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="previous challenges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jZ-PE-yFL">
-                                <rect key="frame" x="59" y="377" width="231" height="32"/>
+                                <rect key="frame" x="80" y="281" width="214" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftA-vk-Nao">
-                                <rect key="frame" x="64" y="307" width="220" height="21"/>
+                                <rect key="frame" x="80" y="307" width="220" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -430,12 +409,49 @@
                                     <outlet property="delegate" destination="No7-nv-9yz" id="pZw-YS-f8U"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5d-NR-bqQ">
+                                <rect key="frame" x="301" y="24" width="53" height="33"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutActionWithSender:" destination="T4f-OY-HVA" eventType="touchUpInside" id="HxY-TM-gYK"/>
+                                    <segue destination="fcT-kQ-WV6" kind="unwind" unwindAction="unwindWithUnwindSegue:" id="kTM-kl-sVc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="previous challenges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jZ-PE-yFL">
+                                <rect key="frame" x="72" y="377" width="231" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXq-fo-ZkQ">
+                                <rect key="frame" x="182" y="136" width="203" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxs-0q-Def">
+                                <rect key="frame" x="182" y="171" width="203" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.090196078430000007" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="P5d-NR-bqQ" firstAttribute="top" secondItem="EzB-5j-cNM" secondAttribute="bottom" constant="4" id="8Bk-gw-OLW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P5d-NR-bqQ" secondAttribute="trailing" constant="5" id="Kee-L0-ySa"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="firstNameLabel" destination="EXq-fo-ZkQ" id="8oR-be-UvQ"/>
                         <outlet property="imageView" destination="Y9b-6L-Zb6" id="z8F-zF-ZSi"/>
-                        <outlet property="nameLabel" destination="euf-tl-5jJ" id="8Wz-cg-h8z"/>
+                        <outlet property="lastNameLabel" destination="Kxs-0q-Def" id="SW4-G6-HpE"/>
                         <outlet property="scoreLabel" destination="ftA-vk-Nao" id="25o-B5-KWT"/>
                     </connections>
                 </viewController>
@@ -782,12 +798,22 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwU-sC-Oyt">
-                                <rect key="frame" x="156" y="112" width="203" height="21"/>
+                                <rect key="frame" x="177" y="95" width="203" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usn-ew-UEq">
+                                <rect key="frame" x="266" y="28" width="93" height="30"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutActionWithSender:" destination="T4f-OY-HVA" eventType="touchUpInside" id="pVp-Zf-r7d"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-Pv-CHZ">
                                 <rect key="frame" x="237" y="303" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -810,7 +836,7 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brD-hF-1IO">
-                                <rect key="frame" x="77" y="269" width="220" height="32"/>
+                                <rect key="frame" x="80" y="269" width="214" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -864,16 +890,13 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                     <outlet property="delegate" destination="T4f-OY-HVA" id="0Pe-2w-S8A"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usn-ew-UEq">
-                                <rect key="frame" x="266" y="28" width="93" height="30"/>
-                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
-                                <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="logOutActionWithSender:" destination="T4f-OY-HVA" eventType="touchUpInside" id="pVp-Zf-r7d"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViZ-ob-WUF">
+                                <rect key="frame" x="177" y="130" width="203" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.090196078430000007" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -881,11 +904,12 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                             <constraint firstAttribute="trailingMargin" secondItem="usn-ew-UEq" secondAttribute="trailing" id="bpB-yi-zm0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" image="profile" selectedImage="profile" id="kMC-UU-aM0" userLabel="Item 3"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile_filled" id="kMC-UU-aM0" userLabel="Item 3"/>
                     <connections>
                         <outlet property="amountDonated" destination="eP4-Pv-CHZ" id="bkI-iB-gj5"/>
                         <outlet property="imageView" destination="PZz-pG-q2B" id="jln-yX-TdK"/>
-                        <outlet property="userName" destination="mwU-sC-Oyt" id="xfl-DE-VEq"/>
+                        <outlet property="userFirstName" destination="mwU-sC-Oyt" id="2Fr-XK-l5y"/>
+                        <outlet property="userLastName" destination="ViZ-ob-WUF" id="Mil-u4-jEq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hn-5X-bV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -954,10 +978,15 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
         <image name="Logo" width="750" height="750"/>
         <image name="alexa" width="959" height="957"/>
         <image name="facebook_white" width="22" height="22"/>
+        <image name="friends" width="30" height="30"/>
+        <image name="friends_filled" width="30" height="30"/>
         <image name="home" width="25" height="25"/>
+        <image name="home_filled" width="25" height="25"/>
         <image name="profile" width="30" height="30"/>
+        <image name="profile_filled" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Jx5-Mh-Dnh"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.3411764706" green="0.090196078430000007" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -16,7 +16,8 @@ import FirebaseInstanceID
 class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   var user: User?
   @IBOutlet weak var imageView: UIImageView?
-  @IBOutlet weak var userName: UILabel!
+  @IBOutlet weak var userFirstName: UILabel!
+  @IBOutlet weak var userLastName: UILabel!
   @IBOutlet weak var amountDonated: UILabel!
 
     override func viewDidLoad() {
@@ -65,7 +66,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         name = "\(firstName) \(lastName)"
       }
     }
-    userName?.text = name
+    userFirstName.text = user?.firstName
+    userLastName.text = user?.lastName
 
     let defaultImage = UIImage(named: "empty_profile")
     if let url = user?.imageURL {

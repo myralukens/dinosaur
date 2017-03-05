@@ -20,16 +20,15 @@ class FriendDetailViewController: UIViewController, UITableViewDataSource, UITab
 
    @IBOutlet weak var imageView: UIImageView!
    
-   @IBOutlet weak var nameLabel: UILabel!
+   @IBOutlet weak var firstNameLabel: UILabel!
+  @IBOutlet weak var lastNameLabel: UILabel!
   @IBOutlet weak var scoreLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-      var msg = (friend?.firstName)! + " " + (friend?.lastName)!
-
-      nameLabel.text = msg
+      firstNameLabel.text = friend?.firstName
+      lastNameLabel.text = friend?.lastName
       scoreLabel.text = "Donated " + String(score) + " times this week!"
       
       if let imageView = imageView {
@@ -76,6 +75,8 @@ class FriendDetailViewController: UIViewController, UITableViewDataSource, UITab
       cell.amount.text = "4"
     }
 
+    cell.backgroundColor = UIColor(red: 106.0/255, green: 47.0/255, blue: 139.0/255, alpha: 1.0)
+    
     return cell
   }
 
@@ -91,16 +92,6 @@ class FriendDetailViewController: UIViewController, UITableViewDataSource, UITab
 
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
-  }
-
-  func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-    var cell = tableView.cellForRow(at: indexPath as IndexPath)
-    cell?.backgroundColor = UIColor.blue
-  }
-
-  func tableView(_ tableView: UITableView, didUnHighlightRowAt indexPath: IndexPath) {
-    var cell = tableView.cellForRow(at: indexPath)
-    cell?.backgroundColor = UIColor(red: 106.0/255, green: 47.0/255, blue: 139.0/255, alpha: 1.0)
   }
 
 }
