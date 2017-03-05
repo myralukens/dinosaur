@@ -55,12 +55,12 @@
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QpD-PG-bb5">
                                 <rect key="frame" x="31" y="230" width="313" height="274"/>
-                                <mutableString key="text">Cora’s Story
+                                <string key="text">Cora’s Story
 
 Cora called ACCESS, an NNAF member organization based in Oakland, in need of transportation and housing support for her abortion. 17 weeks pregnant, Cora needed to travel about 150 miles for her abortion, and she was extremely low on money after a recent house fire. 
 
 ACCESS bought a roundtrip bus ticket for Cora and matched her with a volunteer, who housed her in LA. Cora said she wished there was more transparency about abortion access. She said, “When I first found out, the clinic said they weren’t allowed to give me that information because they were pro-life. I had to figure out everything on my own and no health care professionals would talk to me… So, if it was more open, I think I wouldn’t have had trouble.”
-</mutableString>
+</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -513,13 +513,13 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Go ahead and contribu!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLE-D8-Nnx">
-                                <rect key="frame" x="48" y="423" width="268" height="21"/>
+                                <rect key="frame" x="48" y="424" width="268" height="20"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your support matters -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GZ-Eh-sb6">
-                                <rect key="frame" x="52" y="394" width="271" height="21"/>
+                                <rect key="frame" x="52" y="396" width="271" height="20"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -599,13 +599,17 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brD-hF-1IO">
-                                <rect key="frame" x="77" y="288" width="220" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usn-ew-UEq">
+                                <rect key="frame" x="256" y="20" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutActionWithSender:" destination="T4f-OY-HVA" eventType="touchUpInside" id="pVp-Zf-r7d"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-Pv-CHZ">
                                 <rect key="frame" x="237" y="322" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -635,17 +639,13 @@ In addition to supporting the abortion funds, NNAF is trying to change the laws 
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usn-ew-UEq">
-                                <rect key="frame" x="266" y="28" width="93" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brD-hF-1IO">
+                                <rect key="frame" x="77" y="288" width="220" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="EvelethRegular" family="Eveleth" pointSize="17"/>
-                                <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="0.99395614860000003" green="0.95395022630000004" blue="0.56982731819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="logOutActionWithSender:" destination="T4f-OY-HVA" eventType="touchUpInside" id="pVp-Zf-r7d"/>
-                                </connections>
-                            </button>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3411764706" green="0.090196078430000007" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
