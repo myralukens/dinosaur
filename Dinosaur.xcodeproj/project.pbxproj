@@ -11,6 +11,8 @@
 		3E03389F1E6BA04600C8FCFD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03389E1E6BA04600C8FCFD /* FirstViewController.swift */; };
 		3E0338A11E6BA04F00C8FCFD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0338A01E6BA04F00C8FCFD /* SecondViewController.swift */; };
 		3E0338A31E6BA05700C8FCFD /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0338A21E6BA05700C8FCFD /* ThirdViewController.swift */; };
+		3E0338A51E6BBA4700C8FCFD /* EvelethRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0338A41E6BBA4700C8FCFD /* EvelethRegular.otf */; };
+		3E0338A81E6BBB2700C8FCFD /* EvelethCleanThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0338A71E6BBB2700C8FCFD /* EvelethCleanThin.otf */; };
 		3E310A241E6B754F0008FDE9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E310A231E6B754F0008FDE9 /* AuthService.swift */; };
 		3E310A261E6B7B670008FDE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E310A251E6B7B670008FDE9 /* GoogleService-Info.plist */; };
 		3E310A281E6B8E410008FDE9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E310A271E6B8E410008FDE9 /* UserService.swift */; };
@@ -53,6 +55,8 @@
 		3E03389E1E6BA04600C8FCFD /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		3E0338A01E6BA04F00C8FCFD /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3E0338A21E6BA05700C8FCFD /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3E0338A41E6BBA4700C8FCFD /* EvelethRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvelethRegular.otf; sourceTree = "<group>"; };
+		3E0338A71E6BBB2700C8FCFD /* EvelethCleanThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvelethCleanThin.otf; sourceTree = "<group>"; };
 		3E310A231E6B754F0008FDE9 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3E310A251E6B7B670008FDE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E310A271E6B8E410008FDE9 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 		3EDEDC421E6B47610013DF12 /* Dinosaur */ = {
 			isa = PBXGroup;
 			children = (
+				3E0338A71E6BBB2700C8FCFD /* EvelethCleanThin.otf */,
+				3E0338A41E6BBA4700C8FCFD /* EvelethRegular.otf */,
 				3E310A251E6B7B670008FDE9 /* GoogleService-Info.plist */,
 				3EDEDC731E6B4A1E0013DF12 /* Controllers */,
 				3EDEDC721E6B4A160013DF12 /* Models */,
@@ -327,6 +333,8 @@
 			files = (
 				3EDEDC4E1E6B47610013DF12 /* LaunchScreen.storyboard in Resources */,
 				3E310A261E6B7B670008FDE9 /* GoogleService-Info.plist in Resources */,
+				3E0338A81E6BBB2700C8FCFD /* EvelethCleanThin.otf in Resources */,
+				3E0338A51E6BBA4700C8FCFD /* EvelethRegular.otf in Resources */,
 				3EDEDC4B1E6B47610013DF12 /* Assets.xcassets in Resources */,
 				3EDEDC491E6B47610013DF12 /* Main.storyboard in Resources */,
 			);

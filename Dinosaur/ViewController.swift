@@ -21,8 +21,28 @@ class ViewController: UIViewController {
 
   @IBOutlet weak var challengeProgress: UILabel!
 
+  @IBOutlet weak var storyOfWeek: UITextView!
+  @IBOutlet weak var challengeOfWeek: UITextView!
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    storyOfWeek.font = UIFont(name: "EvelethCleanThin", size: 16)
+
+    storyOfWeek.clipsToBounds = true
+    storyOfWeek.layer.cornerRadius = 10.0
+    storyOfWeek.layer.borderColor = UIColor.white.cgColor
+    storyOfWeek.layer.borderWidth = 1.0
+
+    challengeOfWeek.font = UIFont(name: "EvelethCleanThin", size: 16)
+
+    challengeOfWeek.clipsToBounds = true
+    challengeOfWeek.layer.cornerRadius = 10.0
+    challengeOfWeek.layer.borderColor = UIColor.white.cgColor
+    challengeOfWeek.layer.borderWidth = 1.0
+
+    daysLeftStatic.font = UIFont(name: "EvelethCleanThin", size: 16)
+    daysLeftDynamic.font = UIFont(name: "EvelethCleanThin", size: 16)
+
     donateButton.isHidden = true
     daysLeftStatic.isHidden = true
     daysLeftDynamic.isHidden = true
