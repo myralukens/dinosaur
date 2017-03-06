@@ -14,7 +14,7 @@ On their first login, the user sees information about why donating to abortion i
 On the homepage, the user sees a weekly challenge posted by NNAF
 The user can choose to participate in this challenge by tapping "Count Me In"
 At this point, the user will choose how much to pledge. Every time they do what the challenge is, they donate this amount of money to NNAF.
-<img src="images/start_challenge.giff" width="300px" height="534px" />
+<img src="images/start_challenge.gif" width="300px" height="534px" />
 
 The user can donate, and the app will display the total amount they have donated for this challenge
 <img src="images/donate.gif" width="300px" height="534px" />
