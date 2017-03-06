@@ -14,13 +14,16 @@ On their first login, the user sees information about why donating to abortion i
 On the homepage, the user sees a weekly challenge posted by NNAF
 The user can choose to participate in this challenge by tapping "Count Me In"
 At this point, the user will choose how much to pledge. Every time they do what the challenge is, they donate this amount of money to NNAF.
-![alt tag](images/start_challenge.gif)
+<img src="images/start_challenge.giff" width="300px" height="534px" />
 
 The user can donate, and the app will display the total amount they have donated for this challenge
-![alt tag](images/donate.gif)
+<img src="images/donate.gif" width="300px" height="534px" />
 
 The user can also view their profile and previous challenges they have created and the amount donated
+<img src="images/profile.PNG" width="300px" height="534px" />
 
 Using Facebook authentication, the user can compete with their friends that are active on the app
+<img src="images/friends.PNG" width="300px" height="534px" />
+<img src="images/friend_profile.PNG" width="300px" height="534px" />
 
 contribu incentivizes small, frequent donations to abortion funds, and entices users with the gamification
