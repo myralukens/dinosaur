@@ -9,6 +9,7 @@
 contribu is an iOS app that gamifies donating to abortion funds.
 
 On their first login, the user sees information about why donating to abortion is important
+![alt tag](images/intro_screens.gif)
 
 On the homepage, the user sees a weekly challenge posted by NNAF
 
